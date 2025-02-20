@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ScrollAnimation from "@/app/components/ScrollAnimation";
+import Image from "next/image";
 
 const AboutMe = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -85,10 +86,12 @@ const AboutMe = () => {
         <div className="mx-auto flex flex-col lg:flex-row gap-8 items-center justify-center">
           <div className="rounded-3xl shadow-2xl overflow-hidden xl:flex-[27.5%] lg:flex-[30%] flex items-center justify-center">
             <div className="items-center justify-center xl:w-full xl:h-full lg:w-full lg:h-full md:w-[25em] md:h-[25em] sm:w-[35em] sm:h-[35em]">
-              <img
-                src="/imageofmesit.jpeg  "
+              <Image
+                src="/imageofmesit.jpeg"
                 alt="Profile picture"
                 className="transition-transform duration-300 object-fill hover:scale-105"
+                width={450}
+                height={450}
               />
             </div>
           </div>

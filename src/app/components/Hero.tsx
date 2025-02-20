@@ -36,7 +36,7 @@ const Hero = () => {
 
   const assetsPath = [icebearPatch1.src, icebearPatch5.src];
 
-  const { data, error } = useSWR("assets", () => fetchAssets(assetsPath), {
+  const { error } = useSWR("assets", () => fetchAssets(assetsPath), {
     onSuccess: () => setIsLoaded(true),
   });
 
@@ -62,7 +62,7 @@ const Hero = () => {
       },
     });
 
-    const patches = assetsPath.map((asset, index) => {
+    const patches = assetsPath.map((asset) => {
       const xPosition = Math.random() * window.innerWidth;
       const yPosition = -110;
 
