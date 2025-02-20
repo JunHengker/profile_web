@@ -121,7 +121,7 @@ const AboutMe = () => {
                   Contact Me
                 </a>
                 <a
-                  href="/CV-AlvinYohanes-UMN.pdf"
+                  href="/AlvinYohanesK_CV.pdf"
                   download
                   className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600 px-[1em] pt-[1.4em] font-semibold hover:scale-90 transition-transform duration-300"
                 >
