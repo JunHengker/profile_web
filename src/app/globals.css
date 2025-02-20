@@ -9,13 +9,146 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --black: #171717;
+    --white: #ffffff;
   }
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+  color: var(--black);
+  background: var(--white);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.orange {
+  color: #ff8709;
+  background: none;
+}
+
+.loader .spinner {
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-top-color: #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes glow {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+.text-rgb {
+  background-color: var(--white);
+}
+
+.text-rgb:hover {
+  background-image: linear-gradient(
+    124deg,
+    #72edff,
+    #45fff1,
+    #49e8ff,
+    #02ffec,
+    #2de5ff,
+    #72edff
+  );
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: background-position 0.5s ease-in-out;
+}
+
+.text2-rgb {
+  background-color: var(--white);
+}
+
+.text2-rgb:hover {
+  background-image: linear-gradient(
+    124deg,
+    #50c878, 
+    #3ddc84, 
+    #30d158, 
+    #28a745,
+    #2fd48d, 
+    #50c878  
+  );
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: background-position 0.5s ease-in-out;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  display: flex;
+  animation: scroll 15s linear infinite;
+  width: max-content; /* Ensures content stretches infinitely */
+}
+
+/* Adjust animation speed for different screen sizes */
+@media (max-width: 640px) {
+  .animate-scroll {
+    animation-duration: 17s;
+  }
+}
+
+@media (max-width: 1024px) {
+  .animate-scroll {
+    animation-duration: 16s;
+  }
+}
+
+@keyframes shine {
+  0% {
+    transform: translateX(-100%) translateZ(1px);
+  }
+  100% {
+    transform: translateX(100%) translateZ(1px);
+  }
+}
+
+@keyframes rainbow {
+  0% {
+    background: linear-gradient(to right, transparent, rgba(255, 0, 0, 0.2), transparent);
+  }
+  33% {
+    background: linear-gradient(to right, transparent, rgba(0, 255, 0, 0.2), transparent);
+  }
+  66% {
+    background: linear-gradient(to right, transparent, rgba(0, 0, 255, 0.2), transparent);
+  }
+  100% {
+    background: linear-gradient(to right, transparent, rgba(255, 0, 0, 0.2), transparent);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
