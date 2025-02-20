@@ -88,13 +88,13 @@ export function EffectCard({
           style={{ transform: "translateZ(15px)" }}
         />
         <Image
-          src={image || "/placeholder.svg"}
+          src={image}
           alt={title}
-          layout="fill"
-          objectFit="cover"
+          fill
           className="group-hover:scale-110 transition-transform duration-500"
           style={{
             transform: "translateZ(20px)",
+            objectFit: "cover",
           }}
         />
         <div

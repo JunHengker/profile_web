@@ -2,12 +2,9 @@
 
 import { useEffect, useRef, useState } from "react";
 import Matter from "matter-js";
-import icebearPatch1 from "@/assets/icebearPatch1.png";
 import typescript from "@/assets/typescript.svg";
 import prisma from "@/assets/prisma.svg";
 import next from "@/assets/next.svg";
-import icebearPatch5 from "@/assets/icebearPatch5.png";
-
 import UMN from "@/assets/UMNLogo.png";
 import bunLogo from "@/assets/bunLogo.png";
 import githubLogo from "@/assets/githubLogo.png";
@@ -34,7 +31,7 @@ const Hero = () => {
   const sceneRef = useRef<HTMLDivElement | null>(null);
   const engineRef = useRef(Matter.Engine.create());
 
-  const assetsPath = [icebearPatch1.src, icebearPatch5.src];
+  const assetsPath = ["/icebearPatch1.png", "/icebearPatch5.png"];
 
   const { error } = useSWR("assets", () => fetchAssets(assetsPath), {
     onSuccess: () => setIsLoaded(true),
