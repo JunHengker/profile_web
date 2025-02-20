@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { FC } from "react";
 import docker from "@/assets/docker.svg";
-import bunLogo from "@/assets/bunLogo.png";
+import bunLogo from "@/assets/BunLogo.png";
 import nodejs from "@/assets/nodejs.svg";
 import prisma from "@/assets/prisma.svg";
 import typescript from "@/assets/typescript.svg";
@@ -14,7 +14,7 @@ import laravel from "@/assets/laravel.svg";
 import jupyter from "@/assets/jupyter.svg";
 import python from "@/assets/python.svg";
 import vercel from "@/assets/vercel.svg";
-import vite from "@/assets/Vite.svg";
+import vite from "@/assets/vite.svg";
 import java from "@/assets/java.svg";
 import cCode from "@/assets/c-original.svg";
 import github from "@/assets/github.svg";

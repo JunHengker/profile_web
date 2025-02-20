@@ -6,7 +6,7 @@ import typescript from "@/assets/typescript.svg";
 import prisma from "@/assets/prisma.svg";
 import next from "@/assets/next.svg";
 import UMN from "@/assets/UMNLogo.png";
-import bunLogo from "@/assets/bunLogo.png";
+import bunLogo from "@/assets/BunLogo.png";
 import githubLogo from "@/assets/githubLogo.png";
 import useSWR from "swr";
 import ScrambleText from "./ScrambleText";
